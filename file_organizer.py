@@ -12,13 +12,8 @@ def organize_files():
     if not source_directory:
         return
 
-    # ... (rest of your file organization logic from the previous example)
-
     # Categorizing each file extensions to a dictionary
     file_categories = {'.txt':'Documents', '.doc':'Documents', '.docx':'Documents', '.pdf':'Documents', '.xlsx':'Documents', '.jpg':'Images', '.jpeg':'Images', '.png':'Images', '.mp3':'Musics', '.wav':'Musics', '.mp4':'Videos', '.mkv':'Videos', '.psd':'Photoshop_Files', '.exe':'Applications', '.apk':'Applications', '.html':'HTML_Files', '.zip':'Compressed_Files'}
-
-    # Get source directory from the user
-    #source_directory = input("Enter the path to the source directory: ")
 
     # Traverse the source directory
     for filename in os.listdir(source_directory):
